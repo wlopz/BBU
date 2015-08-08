@@ -10,13 +10,13 @@ import Foundation
 
 class JnsJson {
     
-    func loadJns(completion: ((AnyObject) -> Void)!) {
+    func loadJns(completion: ((JsonExtrct) -> Void)!) {
         
         var urlString = "http://wlodsgn.x10host.com/json/jnslst.json"
         
         let session = NSURLSession.sharedSession()
-        let jnsUrl = NSURL(string: urlString)
-        //let jnsUrl = NSURL(scheme: "http", host: "wlodsgn.x10host.com", path: "/json/jnslst.json")
+        //let jnsUrl = NSURL(string: urlString)
+        let jnsUrl = NSURL(scheme: "http", host: "wlodsgn.x10host.com", path: "/json/jnslst.json")
         
         var task = session.dataTaskWithURL(jnsUrl!){
             (data, response, error) -> Void in

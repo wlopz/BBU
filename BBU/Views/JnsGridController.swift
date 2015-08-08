@@ -35,11 +35,11 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
         
         jns = [JsonExtrct]()
         let json = JnsJson()
-        json.loadJns(nil)
+        json.loadJns(didLoadJns)
     }
     
-    func didLoadJns(jnslst: [JsonExtrct]){
-        self.jns = jnslst
+    func didLoadJns(jns: [JsonExtrct]){
+        self.jns = jns
         collectionView.reloadData()
     }
     
