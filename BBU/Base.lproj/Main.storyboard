@@ -45,6 +45,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
+                                            <outlet property="coverImageView" destination="Lqm-el-FQC" id="CJH-Xl-rUa"/>
                                             <outlet property="titleLabel" destination="bJv-yB-wH7" id="SAD-70-W29"/>
                                         </connections>
                                     </collectionViewCell>

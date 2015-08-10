@@ -48,7 +48,9 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("JnsCell", forIndexPath: indexPath) as! JnsCell
         
         let JsonExtrct = jns[indexPath.row]
+        
         cell.titleLabel.text = JsonExtrct.titulo
+        Utils.asyncLoadShotImage(JsonExtrct, imageView: cell.coverImageView)
         
         return cell
         
