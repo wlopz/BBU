@@ -25,7 +25,7 @@ class JnsCell: UICollectionViewCell {
         titleLabel.textColor = UIColor(white: 0.45, alpha: 1.0)
         titleLabel.font = UIFont(name: mTheme.fontName, size: 11)
         
-        coverImageView.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
-        coverImageView.layer.borderWidth = 0.5
+        //coverImageView.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
+        //coverImageView.layer.borderWidth = 0.5
     }
 }
