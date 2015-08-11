@@ -1,8 +1,8 @@
 //
-//  JnsGridController.swift
+//  BlusasGridController.swift
 //  BBU
 //
-//  Created by Wilfredo Lopez on 8/8/15.
+//  Created by Wilfredo Lopez on 8/11/15.
 //  Copyright (c) 2015 DynmK. All rights reserved.
 //
 
@@ -10,12 +10,12 @@ import Foundation
 
 import UIKit
 
-class JnsGridController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class BlusasGridController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet var collectionView : UICollectionView!
     @IBOutlet var layout : UICollectionViewFlowLayout!
     
-    var jns : [JsonExtrct]!
+    var blusas : [JsonExtrct]!
     var cellHeight : CGFloat = 240
     
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         
-        title = "Jeans"
+        title = "Blusas"
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.clearColor()
@@ -37,21 +37,21 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
         let cellWidth = self.view.frame.width/2
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
         
-        jns = [JsonExtrct]()
-        let json = JnsJson()
-        json.loadJns(didLoadJns)
+        blusas = [JsonExtrct]()
+        let json = BlusasJson()
+        json.loadBlusas(didLoadBlusas)
     }
     
-    func didLoadJns(jns: [JsonExtrct]){
-        self.jns = jns
+    func didLoadBlusas(blusas: [JsonExtrct]){
+        self.blusas = blusas
         collectionView.reloadData()
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("JnsCell", forIndexPath: indexPath) as! JnsCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("BlusasCell", forIndexPath: indexPath) as! BlusasCell
         
-        let JsonExtrct = jns[indexPath.row]
+        let JsonExtrct = blusas[indexPath.row]
         
         cell.titleLabel.text = JsonExtrct.titulo
         Utils.asyncLoadShotImage(JsonExtrct, imageView: cell.coverImageView)
@@ -61,7 +61,7 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return jns.count
+        return blusas.count
     }
     
 }
