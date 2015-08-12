@@ -12,6 +12,7 @@ import UIKit
 
 class JnsGridController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var menuJeans: UIBarButtonItem!
     @IBOutlet var collectionView : UICollectionView!
     @IBOutlet var layout : UICollectionViewFlowLayout!
     
@@ -22,7 +23,12 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
         super.viewDidLoad()
         
         
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        if self.revealViewController() != nil {
+            menuJeans.target = self.revealViewController()
+            menuJeans.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         
         
         title = "Jeans"

@@ -26,7 +26,6 @@
 		3CC5E8121B7695AC0036A9F9 /* JnsGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5E8111B7695AC0036A9F9 /* JnsGridController.swift */; };
 		3CC5E8151B7699310036A9F9 /* JnsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5E8141B7699310036A9F9 /* JnsCell.swift */; };
 		3CC5E8191B7699930036A9F9 /* mTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5E8181B7699930036A9F9 /* mTheme.swift */; };
-		3CC5E81B1B7699E80036A9F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5E81A1B7699E70036A9F9 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +64,6 @@
 		3CC5E8111B7695AC0036A9F9 /* JnsGridController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsGridController.swift; path = Views/JnsGridController.swift; sourceTree = "<group>"; };
 		3CC5E8141B7699310036A9F9 /* JnsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsCell.swift; path = Cells/JnsCell.swift; sourceTree = "<group>"; };
 		3CC5E8181B7699930036A9F9 /* mTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mTheme.swift; path = Theme/mTheme.swift; sourceTree = "<group>"; };
-		3CC5E81A1B7699E70036A9F9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Views/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +169,6 @@
 		3CC5E8101B7695400036A9F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3CC5E81A1B7699E70036A9F9 /* ViewController.swift */,
 				3CC5E8111B7695AC0036A9F9 /* JnsGridController.swift */,
 				3C7E82001B7A970500597103 /* BackTableVC.swift */,
 				3C7E82021B7A9A3400597103 /* BlusasGridController.swift */,
@@ -301,7 +298,6 @@
 				3C7E82071B7A9A7300597103 /* BlusasJson.swift in Sources */,
 				3CC5E8151B7699310036A9F9 /* JnsCell.swift in Sources */,
 				3CC5E80D1B7679E40036A9F9 /* Utils.swift in Sources */,
-				3CC5E81B1B7699E80036A9F9 /* ViewController.swift in Sources */,
 				3CC5E7E71B7672450036A9F9 /* AppDelegate.swift in Sources */,
 				3C7E820B1B7A9C1600597103 /* BlusasCell.swift in Sources */,
 				3CC5E8121B7695AC0036A9F9 /* JnsGridController.swift in Sources */,

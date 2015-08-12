@@ -12,6 +12,7 @@ import UIKit
 
 class LeggingsGridController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var menuLeggings: UIBarButtonItem!
     @IBOutlet var collectionView : UICollectionView!
     @IBOutlet var layout : UICollectionViewFlowLayout!
     
@@ -22,7 +23,12 @@ class LeggingsGridController : UIViewController, UICollectionViewDataSource, UIC
         super.viewDidLoad()
         
         
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        if self.revealViewController() != nil {
+            menuLeggings.target = self.revealViewController()
+            menuLeggings.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         
         
         title = "Leggings"

@@ -12,6 +12,7 @@ import UIKit
 
 class BlusasGridController : UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var menuBlusas: UIBarButtonItem!
     @IBOutlet var collectionView : UICollectionView!
     @IBOutlet var layout : UICollectionViewFlowLayout!
     
@@ -22,7 +23,12 @@ class BlusasGridController : UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         
         
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        if self.revealViewController() != nil {
+            menuBlusas.target = self.revealViewController()
+            menuBlusas.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+        }
         
         
         title = "Blusas"
