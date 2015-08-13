@@ -60,7 +60,7 @@ class BlusasGridController : UIViewController, UICollectionViewDataSource, UICol
         let JsonExtrct = blusas[indexPath.row]
         
         cell.titleLabel.text = JsonExtrct.titulo
-        Utils.asyncLoadShotImage(JsonExtrct, imageView: cell.coverImageView)
+        Utils.asyncLoadJsonImage(JsonExtrct, imageView: cell.coverImageView)
         
         return cell
         
@@ -68,6 +68,42 @@ class BlusasGridController : UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return blusas.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        performSegueWithIdentifier("todetail", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "todetail"){
+            
+            let selectedItems = collectionView.indexPathsForSelectedItems()
+            
+            let selectedIndexPath = selectedItems[0] as! NSIndexPath
+            let jsonextrct = blusas[selectedIndexPath.row]
+            
+            let controller = segue.destinationViewController as! BlusasDetail
+            controller.jsonextrct = jsonextrct
+            
+        }
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+        var cellWidth = calcCellWidth(size)
+        layout.itemSize = CGSizeMake(cellWidth, cellHeight)
+    }
+    
+    func calcCellWidth(size: CGSize) -> CGFloat {
+        let transitionToWide = size.width > size.height
+        var cellWidth = size.width / 2
+        
+        if transitionToWide {
+            cellWidth = size.width / 3
+        }
+        
+        return cellWidth
     }
     
 }

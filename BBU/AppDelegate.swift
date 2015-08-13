@@ -15,8 +15,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        var navAppearance = UINavigationBar.appearance()
+        
+        let backImage = UIImage(named: "back")
+        navAppearance.backIndicatorImage = backImage
+        navAppearance.backIndicatorTransitionMaskImage = backImage
+        
+        let textAttributes : NSMutableDictionary = NSMutableDictionary()
+        textAttributes.setObject(UIColor.blackColor(), forKey: NSForegroundColorAttributeName)
+        textAttributes.setObject(UIFont(name: mTheme.fontName, size: 19)!, forKey: NSFontAttributeName)
+        
+        navAppearance.titleTextAttributes = textAttributes as [NSObject : AnyObject]
+        navAppearance.tintColor = UIColor.blackColor()
+        
+        let barButtonAppearance = UIBarButtonItem.appearance()
+        barButtonAppearance.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), forBarMetrics: .Default)
+        barButtonAppearance.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), forBarMetrics: .Compact)
+        
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
