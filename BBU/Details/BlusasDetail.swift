@@ -90,19 +90,13 @@ class BlusasDetail: UIViewController {
         //imageView3.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
         //imageView3.layer.borderWidth = 0.5
         
-        //var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomShot:")
-        //tapGestureZoom.numberOfTapsRequired = 1
-        //tapGestureZoom.numberOfTouchesRequired = 1
-        //topImageView.userInteractionEnabled = true
-        //topImageView.addGestureRecognizer(tapGestureZoom)
+        var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomBlusas:")
+        tapGestureZoom.numberOfTapsRequired = 1
+        tapGestureZoom.numberOfTouchesRequired = 1
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureZoom)
         
     }
-    
-    //override func viewWillAppear(animated: Bool) {
-    //super.viewWillAppear(animated)
-    
-    //addShotGradient()
-    //}
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.Default
@@ -112,25 +106,14 @@ class BlusasDetail: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    //func addShotGradient(){
+    @IBAction func zoomBlusas(sender: AnyObject?){
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let controller = storyboard.instantiateViewControllerWithIdentifier("BlusasZoomController") as! BlusasZoomController
+    self.modalPresentationStyle = UIModalPresentationStyle.Custom
+    controller.transitioningDelegate = transitionOperator
+    controller.jsonextrct = jsonextrct
     
-    //topGradientView.clipsToBounds = true
-    
-    //let gradientLayer = CAGradientLayer()
-    //gradientLayer.frame = CGRectMake(0, 0, 1000, 90)
-    //gradientLayer.colors = [UIColor(white: 0.0, alpha: 0.0).CGColor, UIColor(white: 0.0, alpha: 0.5).CGColor]
-    
-    //self.topGradientView.layer.addSublayer(gradientLayer)
-    //}
-    
-    //@IBAction func zoomShot(sender: AnyObject?){
-    //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //let controller = storyboard.instantiateViewControllerWithIdentifier("ShotZoomController") as! ShotZoomController
-    //self.modalPresentationStyle = UIModalPresentationStyle.Custom
-    //controller.transitioningDelegate = transitionOperator
-    //controller.shot = shot
-    
-    //presentViewController(controller, animated: true, completion: nil)
-    //}
+    presentViewController(controller, animated: true, completion: nil)
+    }
     
 }

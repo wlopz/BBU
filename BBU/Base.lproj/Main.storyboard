@@ -32,7 +32,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="217" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-Ef-gmP">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrn-Ef-gmP">
                                                     <rect key="frame" x="12" y="8" width="192" height="172"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0k-rV-10C">
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fm2-NU-KyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1297" y="-3611"/>
+            <point key="canvasLocation" x="-1297" y="-3659"/>
         </scene>
         <!--Jns Detail-->
         <scene sceneID="pNO-eS-SMn">
@@ -208,12 +208,12 @@
                         <outlet property="refLabel" destination="xwo-wj-tTK" id="EXl-g1-1I3"/>
                         <outlet property="tipoLabel" destination="4iR-8J-Gtf" id="QuJ-kl-tyg"/>
                         <outlet property="tituloLabel" destination="QiZ-cX-H3h" id="Ce9-jv-p6s"/>
-                        <segue destination="dLx-gF-6dW" kind="custom" identifier="zoom" customClass="CustomSeg" id="pOc-6T-VBF"/>
+                        <segue destination="dLx-gF-6dW" kind="custom" identifier="jnszoom" customClass="CustomSeg" id="pOc-6T-VBF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nak-eJ-iuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1297" y="-2909"/>
+            <point key="canvasLocation" x="-1297" y="-2944"/>
         </scene>
         <!--Blusas Grid Controller-->
         <scene sceneID="lqb-d2-LSZ">
@@ -243,7 +243,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="217" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-0h-N0k">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-0h-N0k">
                                                     <rect key="frame" x="12" y="8" width="192" height="172"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tge-r9-CP3">
@@ -341,7 +341,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCv-tr-fbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1297" y="-2229"/>
+            <point key="canvasLocation" x="-1297" y="-2232"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="FCY-HL-klX">
@@ -584,7 +584,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFY-rC-K0C">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="354"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emy-LS-tEA">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emy-LS-tEA">
                                         <rect key="frame" x="80" y="85" width="216" height="248"/>
                                     </imageView>
                                 </subviews>
@@ -600,47 +600,12 @@
                         <outlet property="refLabel" destination="zPk-2S-jEp" id="GXs-z9-Z9s"/>
                         <outlet property="tipoLabel" destination="KGW-Uv-B5n" id="cQ2-1Z-nUA"/>
                         <outlet property="tituloLabel" destination="tje-PC-5gh" id="dJN-kd-l2P"/>
+                        <segue destination="KlA-Gr-5za" kind="custom" identifier="blusaszoom" customClass="CustomSeg" id="x1t-4S-1bW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="563-Yc-rwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="845" y="-832"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3DG-BE-QRv">
-            <objects>
-                <viewController id="fsr-Rb-UXw" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uav-uJ-OCv"/>
-                        <viewControllerLayoutGuide type="bottom" id="3xQ-Le-0jy"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Je9-uD-ok7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xut-tu-Rnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1541" y="-832"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pZW-Gi-kOK">
-            <objects>
-                <viewController id="gFb-7X-pE2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Kom-bO-RNf"/>
-                        <viewControllerLayoutGuide type="bottom" id="h8B-FL-H9d"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ho3-7w-yW7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GjK-0n-EU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1287" y="2039"/>
         </scene>
         <!--Leggings Detail-->
         <scene sceneID="xBb-18-HSJ">
@@ -717,13 +682,13 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RdY-iL-n76">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="354"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-DE-qi6">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qxa-DE-qi6">
                                         <rect key="frame" x="8" y="85" width="216" height="248"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMx-ac-V7q">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zMx-ac-V7q">
                                         <rect key="frame" x="232" y="77" width="137" height="125"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-st-AVV">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LS9-st-AVV">
                                         <rect key="frame" x="232" y="221" width="137" height="125"/>
                                     </imageView>
                                 </subviews>
@@ -741,11 +706,92 @@
                         <outlet property="refLabel" destination="IVZ-gh-ghr" id="aqa-mQ-lUp"/>
                         <outlet property="tipoLabel" destination="I7I-fl-C5L" id="0tE-dW-XHx"/>
                         <outlet property="tituloLabel" destination="pwh-UV-IS8" id="Eyi-C6-bGT"/>
+                        <segue destination="21T-vQ-fGU" kind="custom" identifier="leggingszoom" customClass="CustomSeg" id="S7i-RX-Hr9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAM-Gv-aJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1287" y="1334"/>
+        </scene>
+        <!--Leggings Zoom Controller-->
+        <scene sceneID="Wcb-7G-b0W">
+            <objects>
+                <viewController storyboardIdentifier="LeggingsZoomController" modalPresentationStyle="overFullScreen" id="21T-vQ-fGU" customClass="LeggingsZoomController" customModule="BBU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="abA-Gy-c4C"/>
+                        <viewControllerLayoutGuide type="bottom" id="04e-Qq-pSt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPO-xi-sEG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgq-bW-IcF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-dC-qJG">
+                                        <rect key="frame" x="148" y="510" width="90" height="90"/>
+                                        <state key="normal" title=" Close" image="Back"/>
+                                        <connections>
+                                            <action selector="closeZoom:" destination="21T-vQ-fGU" eventType="touchUpInside" id="D47-Ti-NK4"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JYw-mH-fe1">
+                                        <rect key="frame" x="87" y="86" width="212" height="427"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.023529414089999999" green="0.0078431377190000002" blue="0.023529414089999999" alpha="0.5" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="leggingsImageView" destination="JYw-mH-fe1" id="Gso-el-fnP"/>
+                        <outlet property="leggingsImageView2" destination="JYw-mH-fe1" id="jpd-Do-fPD"/>
+                        <outlet property="leggingsImageView3" destination="JYw-mH-fe1" id="9GH-Tu-0es"/>
+                        <outlet property="scrollView" destination="hgq-bW-IcF" id="gqy-pc-wXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbZ-bn-0XH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1287" y="2044"/>
+        </scene>
+        <!--Blusas Zoom Controller-->
+        <scene sceneID="7XT-uL-Wi2">
+            <objects>
+                <viewController storyboardIdentifier="BlusasZoomController" modalPresentationStyle="overFullScreen" id="KlA-Gr-5za" customClass="BlusasZoomController" customModule="BBU" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dlh-fX-xWt"/>
+                        <viewControllerLayoutGuide type="bottom" id="YEr-br-7jM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1nE-1x-8ez">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djy-XV-SP5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7M-XA-94J">
+                                        <rect key="frame" x="148" y="510" width="90" height="90"/>
+                                        <state key="normal" title=" Close" image="Back"/>
+                                        <connections>
+                                            <action selector="closeZoom:" destination="KlA-Gr-5za" eventType="touchUpInside" id="vbj-Co-Y7R"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfY-7A-xZR">
+                                        <rect key="frame" x="87" y="86" width="212" height="427"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.023529414089999999" green="0.0078431377190000002" blue="0.023529414089999999" alpha="0.5" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="blusasImageView" destination="jfY-7A-xZR" id="GOT-ow-z4e"/>
+                        <outlet property="scrollView" destination="djy-XV-SP5" id="amI-yG-Dh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifi-em-LkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="-832"/>
         </scene>
     </scenes>
     <resources>

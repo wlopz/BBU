@@ -38,7 +38,7 @@ class TransitionOperator: NSObject, UIViewControllerAnimatedTransitioning, UIVie
         
         UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.8, options: nil, animations: {
             
-            self.snapshot.transform = CGAffineTransformIdentity
+            //self.snapshot.transform = CGAffineTransformIdentity
             
             }, completion: { finished in
                 transitionContext.completeTransition(true)
