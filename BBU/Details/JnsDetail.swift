@@ -25,7 +25,7 @@ class JnsDetail: UIViewController {
     
     var jsonextrct : JsonExtrct!
     
-    //var photos : [String]!
+    var photos : [String]!
     
     var transitionOperator = TransitionOperator()
     
@@ -90,19 +90,25 @@ class JnsDetail: UIViewController {
         imageView3.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
         imageView3.layer.borderWidth = 0.5
         
-        //var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomShot:")
-        //tapGestureZoom.numberOfTapsRequired = 1
-        //tapGestureZoom.numberOfTouchesRequired = 1
-        //topImageView.userInteractionEnabled = true
-        //topImageView.addGestureRecognizer(tapGestureZoom)
+        var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomJns:")
+        tapGestureZoom.numberOfTapsRequired = 1
+        tapGestureZoom.numberOfTouchesRequired = 1
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureZoom)
+        
+        var tapGestureZoom2 = UITapGestureRecognizer(target: self, action: "zoomJns2:")
+        tapGestureZoom2.numberOfTapsRequired = 1
+        tapGestureZoom2.numberOfTouchesRequired = 1
+        imageView2.userInteractionEnabled = true
+        imageView2.addGestureRecognizer(tapGestureZoom2)
+        
+        var tapGestureZoom3 = UITapGestureRecognizer(target: self, action: "zoomJns3:")
+        tapGestureZoom3.numberOfTapsRequired = 1
+        tapGestureZoom3.numberOfTouchesRequired = 1
+        imageView3.userInteractionEnabled = true
+        imageView3.addGestureRecognizer(tapGestureZoom3)
         
     }
-    
-    //override func viewWillAppear(animated: Bool) {
-        //super.viewWillAppear(animated)
-        
-        //addShotGradient()
-    //}
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.Default
@@ -112,25 +118,34 @@ class JnsDetail: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    //func addShotGradient(){
+    @IBAction func zoomJns(sender: AnyObject?){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController") as! JnsZoomController
+        self.modalPresentationStyle = UIModalPresentationStyle.Custom
+        controller.transitioningDelegate = transitionOperator
+        controller.jsonextrct = jsonextrct
         
-        //topGradientView.clipsToBounds = true
-        
-        //let gradientLayer = CAGradientLayer()
-        //gradientLayer.frame = CGRectMake(0, 0, 1000, 90)
-        //gradientLayer.colors = [UIColor(white: 0.0, alpha: 0.0).CGColor, UIColor(white: 0.0, alpha: 0.5).CGColor]
-        
-        //self.topGradientView.layer.addSublayer(gradientLayer)
-    //}
+        presentViewController(controller, animated: true, completion: nil)
+    }
     
-    //@IBAction func zoomShot(sender: AnyObject?){
-        //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        //let controller = storyboard.instantiateViewControllerWithIdentifier("ShotZoomController") as! ShotZoomController
-        //self.modalPresentationStyle = UIModalPresentationStyle.Custom
-        //controller.transitioningDelegate = transitionOperator
-        //controller.shot = shot
+    @IBAction func zoomJns2(sender: AnyObject?){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController") as! JnsZoomController
+        self.modalPresentationStyle = UIModalPresentationStyle.Custom
+        controller.transitioningDelegate = transitionOperator
+        controller.jsonextrct = jsonextrct
         
-        //presentViewController(controller, animated: true, completion: nil)
-    //}
+        presentViewController(controller, animated: true, completion: nil)
+    }
+    
+    @IBAction func zoomJns3(sender: AnyObject?){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController") as! JnsZoomController
+        self.modalPresentationStyle = UIModalPresentationStyle.Custom
+        controller.transitioningDelegate = transitionOperator
+        controller.jsonextrct = jsonextrct
+        
+        presentViewController(controller, animated: true, completion: nil)
+    }
     
 }
