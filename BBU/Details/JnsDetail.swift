@@ -130,7 +130,7 @@ class JnsDetail: UIViewController {
     
     @IBAction func zoomJns2(sender: AnyObject?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController") as! JnsZoomController
+        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController2") as! JnsZoomController2
         self.modalPresentationStyle = UIModalPresentationStyle.Custom
         controller.transitioningDelegate = transitionOperator
         controller.jsonextrct = jsonextrct
@@ -140,7 +140,7 @@ class JnsDetail: UIViewController {
     
     @IBAction func zoomJns3(sender: AnyObject?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController") as! JnsZoomController
+        let controller = storyboard.instantiateViewControllerWithIdentifier("JnsZoomController3") as! JnsZoomController3
         self.modalPresentationStyle = UIModalPresentationStyle.Custom
         controller.transitioningDelegate = transitionOperator
         controller.jsonextrct = jsonextrct

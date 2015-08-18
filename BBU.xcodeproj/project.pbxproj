@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C2000631B7F832B006E37A0 /* JnsZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2000621B7F832B006E37A0 /* JnsZoomController.swift */; };
-		3C286ADF1B803EF800BB033A /* BlusasZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C286ADE1B803EF800BB033A /* BlusasZoomController.swift */; };
-		3C286AE11B803F3800BB033A /* LeggingsZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C286AE01B803F3800BB033A /* LeggingsZoomController.swift */; };
 		3C61BEC91B7CE21F004C6890 /* JnsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61BEC81B7CE21F004C6890 /* JnsDetail.swift */; };
 		3C61BECB1B7CE293004C6890 /* BlusasDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61BECA1B7CE293004C6890 /* BlusasDetail.swift */; };
 		3C61BECD1B7CE2AD004C6890 /* LeggingsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61BECC1B7CE2AD004C6890 /* LeggingsDetail.swift */; };
@@ -22,6 +19,13 @@
 		3C7E82091B7A9A8A00597103 /* LeggingsJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E82081B7A9A8A00597103 /* LeggingsJson.swift */; };
 		3C7E820B1B7A9C1600597103 /* BlusasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E820A1B7A9C1600597103 /* BlusasCell.swift */; };
 		3C7E820D1B7A9C3200597103 /* LeggingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7E820C1B7A9C3200597103 /* LeggingsCell.swift */; };
+		3CAB19761B82D81400636462 /* JnsZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19751B82D81400636462 /* JnsZoomController.swift */; };
+		3CAB19781B82D85700636462 /* JnsZoomController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19771B82D85700636462 /* JnsZoomController2.swift */; };
+		3CAB197A1B82D87500636462 /* JnsZoomController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19791B82D87500636462 /* JnsZoomController3.swift */; };
+		3CAB197E1B82E01300636462 /* BlusasZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB197D1B82E01300636462 /* BlusasZoomController.swift */; };
+		3CAB19801B82E01E00636462 /* LeggingsZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB197F1B82E01E00636462 /* LeggingsZoomController.swift */; };
+		3CAB19861B82F25300636462 /* LeggingsZoomController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19851B82F25300636462 /* LeggingsZoomController2.swift */; };
+		3CAB19881B82F26600636462 /* LeggingsZoomController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19871B82F26600636462 /* LeggingsZoomController3.swift */; };
 		3CC5E7E71B7672450036A9F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5E7E61B7672450036A9F9 /* AppDelegate.swift */; };
 		3CC5E7EC1B7672450036A9F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC5E7EA1B7672450036A9F9 /* Main.storyboard */; };
 		3CC5E7EE1B7672450036A9F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC5E7ED1B7672450036A9F9 /* Images.xcassets */; };
@@ -46,9 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C2000621B7F832B006E37A0 /* JnsZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsZoomController.swift; path = Zoom/JnsZoomController.swift; sourceTree = "<group>"; };
-		3C286ADE1B803EF800BB033A /* BlusasZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlusasZoomController.swift; path = Zoom/BlusasZoomController.swift; sourceTree = "<group>"; };
-		3C286AE01B803F3800BB033A /* LeggingsZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController.swift; path = Zoom/LeggingsZoomController.swift; sourceTree = "<group>"; };
 		3C61BEC81B7CE21F004C6890 /* JnsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsDetail.swift; path = Details/JnsDetail.swift; sourceTree = "<group>"; };
 		3C61BECA1B7CE293004C6890 /* BlusasDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlusasDetail.swift; path = Details/BlusasDetail.swift; sourceTree = "<group>"; };
 		3C61BECC1B7CE2AD004C6890 /* LeggingsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsDetail.swift; path = Details/LeggingsDetail.swift; sourceTree = "<group>"; };
@@ -63,6 +64,13 @@
 		3C7E82081B7A9A8A00597103 /* LeggingsJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsJson.swift; path = JSON/LeggingsJson.swift; sourceTree = "<group>"; };
 		3C7E820A1B7A9C1600597103 /* BlusasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlusasCell.swift; path = Cells/BlusasCell.swift; sourceTree = "<group>"; };
 		3C7E820C1B7A9C3200597103 /* LeggingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsCell.swift; path = Cells/LeggingsCell.swift; sourceTree = "<group>"; };
+		3CAB19751B82D81400636462 /* JnsZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsZoomController.swift; path = Zoom/JnsZoom/JnsZoomController.swift; sourceTree = "<group>"; };
+		3CAB19771B82D85700636462 /* JnsZoomController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsZoomController2.swift; path = Zoom/JnsZoom/JnsZoomController2.swift; sourceTree = "<group>"; };
+		3CAB19791B82D87500636462 /* JnsZoomController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsZoomController3.swift; path = Zoom/JnsZoom/JnsZoomController3.swift; sourceTree = "<group>"; };
+		3CAB197D1B82E01300636462 /* BlusasZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlusasZoomController.swift; path = Zoom/BlusasZoom/BlusasZoomController.swift; sourceTree = "<group>"; };
+		3CAB197F1B82E01E00636462 /* LeggingsZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController.swift; path = Zoom/LeggingsZoom/LeggingsZoomController.swift; sourceTree = "<group>"; };
+		3CAB19851B82F25300636462 /* LeggingsZoomController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController2.swift; path = Zoom/LeggingsZoom/LeggingsZoomController2.swift; sourceTree = "<group>"; };
+		3CAB19871B82F26600636462 /* LeggingsZoomController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController3.swift; path = Zoom/LeggingsZoom/LeggingsZoomController3.swift; sourceTree = "<group>"; };
 		3CC5E7E11B7672450036A9F9 /* BBU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5E7E51B7672450036A9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC5E7E61B7672450036A9F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,9 +109,9 @@
 		3C2000611B7F82FA006E37A0 /* Zoom */ = {
 			isa = PBXGroup;
 			children = (
-				3C2000621B7F832B006E37A0 /* JnsZoomController.swift */,
-				3C286ADE1B803EF800BB033A /* BlusasZoomController.swift */,
-				3C286AE01B803F3800BB033A /* LeggingsZoomController.swift */,
+				3CAB197C1B82DFDF00636462 /* LeggingsZoom */,
+				3CAB197B1B82DFCB00636462 /* BlusasZoom */,
+				3CAB19741B82D7B500636462 /* JnsZoom */,
 			);
 			name = Zoom;
 			sourceTree = "<group>";
@@ -124,6 +132,34 @@
 				3C61BECF1B7CE85D004C6890 /* TransitionOperator.swift */,
 			);
 			name = TransitionOperator;
+			sourceTree = "<group>";
+		};
+		3CAB19741B82D7B500636462 /* JnsZoom */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB19751B82D81400636462 /* JnsZoomController.swift */,
+				3CAB19771B82D85700636462 /* JnsZoomController2.swift */,
+				3CAB19791B82D87500636462 /* JnsZoomController3.swift */,
+			);
+			name = JnsZoom;
+			sourceTree = "<group>";
+		};
+		3CAB197B1B82DFCB00636462 /* BlusasZoom */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB197D1B82E01300636462 /* BlusasZoomController.swift */,
+			);
+			name = BlusasZoom;
+			sourceTree = "<group>";
+		};
+		3CAB197C1B82DFDF00636462 /* LeggingsZoom */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB197F1B82E01E00636462 /* LeggingsZoomController.swift */,
+				3CAB19851B82F25300636462 /* LeggingsZoomController2.swift */,
+				3CAB19871B82F26600636462 /* LeggingsZoomController3.swift */,
+			);
+			name = LeggingsZoom;
 			sourceTree = "<group>";
 		};
 		3CC5E7D81B7672450036A9F9 = {
@@ -342,7 +378,7 @@
 			files = (
 				3C7E82071B7A9A7300597103 /* BlusasJson.swift in Sources */,
 				3CC5E8151B7699310036A9F9 /* JnsCell.swift in Sources */,
-				3C2000631B7F832B006E37A0 /* JnsZoomController.swift in Sources */,
+				3CAB197A1B82D87500636462 /* JnsZoomController3.swift in Sources */,
 				3CC5E80D1B7679E40036A9F9 /* Utils.swift in Sources */,
 				3CC5E7E71B7672450036A9F9 /* AppDelegate.swift in Sources */,
 				3C61BECD1B7CE2AD004C6890 /* LeggingsDetail.swift in Sources */,
@@ -350,13 +386,17 @@
 				3C61BED01B7CE85D004C6890 /* TransitionOperator.swift in Sources */,
 				3CC5E8121B7695AC0036A9F9 /* JnsGridController.swift in Sources */,
 				3C7E82051B7A9A4A00597103 /* LeggingsGridController.swift in Sources */,
-				3C286ADF1B803EF800BB033A /* BlusasZoomController.swift in Sources */,
+				3CAB19861B82F25300636462 /* LeggingsZoomController2.swift in Sources */,
 				3C7E81FF1B7A907F00597103 /* SWRevealViewController.m in Sources */,
-				3C286AE11B803F3800BB033A /* LeggingsZoomController.swift in Sources */,
 				3C61BEC91B7CE21F004C6890 /* JnsDetail.swift in Sources */,
+				3CAB19801B82E01E00636462 /* LeggingsZoomController.swift in Sources */,
+				3CAB19881B82F26600636462 /* LeggingsZoomController3.swift in Sources */,
+				3CAB19781B82D85700636462 /* JnsZoomController2.swift in Sources */,
 				3C7E82011B7A970500597103 /* BackTableVC.swift in Sources */,
 				3C7E82091B7A9A8A00597103 /* LeggingsJson.swift in Sources */,
 				3CC5E8081B76762E0036A9F9 /* JnsJson.swift in Sources */,
+				3CAB197E1B82E01300636462 /* BlusasZoomController.swift in Sources */,
+				3CAB19761B82D81400636462 /* JnsZoomController.swift in Sources */,
 				3C61BECB1B7CE293004C6890 /* BlusasDetail.swift in Sources */,
 				3CC5E80F1B767B590036A9F9 /* JsonExtrct.swift in Sources */,
 				3C7E820D1B7A9C3200597103 /* LeggingsCell.swift in Sources */,

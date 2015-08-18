@@ -130,7 +130,7 @@ class LeggingsDetail: UIViewController {
     
     @IBAction func zoomLeggings2(sender: AnyObject?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("LeggingsZoomController") as! LeggingsZoomController
+        let controller = storyboard.instantiateViewControllerWithIdentifier("LeggingsZoomController2") as! LeggingsZoomController2
         self.modalPresentationStyle = UIModalPresentationStyle.Custom
         controller.transitioningDelegate = transitionOperator
         controller.jsonextrct = jsonextrct
@@ -140,7 +140,7 @@ class LeggingsDetail: UIViewController {
     
     @IBAction func zoomLeggings3(sender: AnyObject?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("LeggingsZoomController") as! LeggingsZoomController
+        let controller = storyboard.instantiateViewControllerWithIdentifier("LeggingsZoomController3") as! LeggingsZoomController3
         self.modalPresentationStyle = UIModalPresentationStyle.Custom
         controller.transitioningDelegate = transitionOperator
         controller.jsonextrct = jsonextrct

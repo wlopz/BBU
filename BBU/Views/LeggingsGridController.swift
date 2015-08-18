@@ -39,8 +39,8 @@ class LeggingsGridController : UIViewController, UICollectionViewDataSource, UIC
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
         
-        //let cellWidth = calcCellWidth(self.view.frame.size)
-        let cellWidth = self.view.frame.width/2
+        let cellWidth = calcCellWidth(self.view.frame.size)
+        //let cellWidth = self.view.frame.width/2
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
         
         leggings = [JsonExtrct]()
