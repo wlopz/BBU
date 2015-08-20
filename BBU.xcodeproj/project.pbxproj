@@ -27,6 +27,7 @@
 		3CAB19861B82F25300636462 /* LeggingsZoomController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19851B82F25300636462 /* LeggingsZoomController2.swift */; };
 		3CAB19881B82F26600636462 /* LeggingsZoomController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19871B82F26600636462 /* LeggingsZoomController3.swift */; };
 		3CAB198A1B83B23300636462 /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB19891B83B23300636462 /* ContactoViewController.swift */; };
+		3CAB198C1B8517B900636462 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB198B1B8517B900636462 /* MenuViewController.swift */; };
 		3CC5E7E71B7672450036A9F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5E7E61B7672450036A9F9 /* AppDelegate.swift */; };
 		3CC5E7EC1B7672450036A9F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC5E7EA1B7672450036A9F9 /* Main.storyboard */; };
 		3CC5E7EE1B7672450036A9F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC5E7ED1B7672450036A9F9 /* Images.xcassets */; };
@@ -73,6 +74,7 @@
 		3CAB19851B82F25300636462 /* LeggingsZoomController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController2.swift; path = Zoom/LeggingsZoom/LeggingsZoomController2.swift; sourceTree = "<group>"; };
 		3CAB19871B82F26600636462 /* LeggingsZoomController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController3.swift; path = Zoom/LeggingsZoom/LeggingsZoomController3.swift; sourceTree = "<group>"; };
 		3CAB19891B83B23300636462 /* ContactoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactoViewController.swift; path = Views/ContactoViewController.swift; sourceTree = "<group>"; };
+		3CAB198B1B8517B900636462 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Views/MenuViewController.swift; sourceTree = "<group>"; };
 		3CC5E7E11B7672450036A9F9 /* BBU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5E7E51B7672450036A9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC5E7E61B7672450036A9F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				3C7E82021B7A9A3400597103 /* BlusasGridController.swift */,
 				3C7E82041B7A9A4A00597103 /* LeggingsGridController.swift */,
 				3CAB19891B83B23300636462 /* ContactoViewController.swift */,
+				3CAB198B1B8517B900636462 /* MenuViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				3C7E82071B7A9A7300597103 /* BlusasJson.swift in Sources */,
 				3CC5E8151B7699310036A9F9 /* JnsCell.swift in Sources */,
 				3CAB197A1B82D87500636462 /* JnsZoomController3.swift in Sources */,
+				3CAB198C1B8517B900636462 /* MenuViewController.swift in Sources */,
 				3CAB198A1B83B23300636462 /* ContactoViewController.swift in Sources */,
 				3CC5E80D1B7679E40036A9F9 /* Utils.swift in Sources */,
 				3CC5E7E71B7672450036A9F9 /* AppDelegate.swift in Sources */,
