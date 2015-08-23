@@ -72,6 +72,7 @@ class JnsDetail: UIViewController {
         imageView.layer.borderColor = UIColor.redColor().CGColor
         imageView.layer.borderWidth = 0.5
         
+        
         if let imageData2 = jsonextrct.imageData2 {
             imageView2.image = UIImage(data: imageData2)
         }else{
