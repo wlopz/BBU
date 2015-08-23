@@ -34,32 +34,32 @@ class BlusasDetail: UIViewController {
         
         //titulo = jsonextrct.titulo
         
-        tituloLabel.font = UIFont(name: mTheme.fontName, size: 21)
-        tituloLabel.textColor = UIColor.blackColor()
+        tituloLabel.font = UIFont(name: mTheme.fontName, size: 28)
+        tituloLabel.textColor = UIColor.redColor()
         tituloLabel.text = jsonextrct.titulo
         
         //marca = jsonextrct.marca
         
-        marcaLabel.font = UIFont(name: mTheme.fontName, size: 21)
-        marcaLabel.textColor = UIColor.blackColor()
+        marcaLabel.font = UIFont(name: mTheme.fontName, size: 18)
+        marcaLabel.textColor = UIColor.redColor()
         marcaLabel.text = jsonextrct.marca
         
         //color = jsonextrct.color
         
-        colorLabel.font = UIFont(name: mTheme.fontName, size: 21)
-        colorLabel.textColor = UIColor.blackColor()
+        colorLabel.font = UIFont(name: mTheme.fontName, size: 18)
+        colorLabel.textColor = UIColor.redColor()
         colorLabel.text = jsonextrct.color
         
         //tipo = jsonextrct.tipo
         
-        tipoLabel.font = UIFont(name: mTheme.fontName, size: 21)
-        tipoLabel.textColor = UIColor.blackColor()
+        tipoLabel.font = UIFont(name: mTheme.fontName, size: 18)
+        tipoLabel.textColor = UIColor.redColor()
         tipoLabel.text = jsonextrct.tipo
         
         //ref = jsonextrct.ref
         
-        refLabel.font = UIFont(name: mTheme.fontName, size: 21)
-        refLabel.textColor = UIColor.blackColor()
+        refLabel.font = UIFont(name: mTheme.fontName, size: 18)
+        refLabel.textColor = UIColor.redColor()
         refLabel.text = "\(jsonextrct.ref)"
         
         if let imageData = jsonextrct.imageData {
@@ -69,7 +69,7 @@ class BlusasDetail: UIViewController {
         }
         //topImageViewHeightConstraint.constant = 240
         
-        imageView.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
+        imageView.layer.borderColor = UIColor.redColor().CGColor
         imageView.layer.borderWidth = 0.5
         
         //if let imageData2 = jsonextrct.imageData2 {

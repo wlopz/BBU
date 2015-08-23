@@ -22,10 +22,10 @@ class JnsCell: UICollectionViewCell {
         //nameLabel.textColor = UIColor.blackColor()
         //nameLabel.font = UIFont(name: MTheme.fontName, size: 14)
         
-        titleLabel.textColor = UIColor(white: 0.45, alpha: 1.0)
-        titleLabel.font = UIFont(name: mTheme.fontName, size: 11)
+        titleLabel.textColor = UIColor.redColor()
+        titleLabel.font = UIFont(name: mTheme.fontName, size: 14)
         
-        coverImageView.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
+        coverImageView.layer.borderColor = UIColor.redColor().CGColor
         coverImageView.layer.borderWidth = 0.5
     }
 }
