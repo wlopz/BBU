@@ -10,17 +10,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="DSp-be-iOz">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="DSp-be-iOz">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DSp-be-iOz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="01c-4K-R8C"/>
+                <constraint firstItem="DSp-be-iOz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GcN-6E-i10"/>
+                <constraint firstAttribute="trailing" secondItem="DSp-be-iOz" secondAttribute="trailing" id="pHZ-La-kwb"/>
+                <constraint firstAttribute="bottom" secondItem="DSp-be-iOz" secondAttribute="bottom" id="sWZ-hG-udN"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="Image" width="480" height="720"/>
+        <image name="Launch" width="480" height="720"/>
     </resources>
 </document>
