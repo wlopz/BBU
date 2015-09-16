@@ -12,7 +12,7 @@ class LeggingsJson {
     
     func loadLeggings(completion: ([JsonExtrct] -> Void)?) {
         
-        var urlString = "http://wlodsgn.x10host.com/json/leggingslst.json"
+        var urlString = "http://bonbonup.x10host.com/json/leggingslst.json"
         
         let session = NSURLSession.sharedSession()
         let leggingsUrl = NSURL(string: urlString)

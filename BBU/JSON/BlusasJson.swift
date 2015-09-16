@@ -12,7 +12,7 @@ class BlusasJson {
     
     func loadBlusas(completion: ([JsonExtrct] -> Void)?) {
         
-        var urlString = "http://wlodsgn.x10host.com/json/blusaslst.json"
+        var urlString = "http://bonbonup.x10host.com/json/blusaslst.json"
         
         let session = NSURLSession.sharedSession()
         let blusasUrl = NSURL(string: urlString)

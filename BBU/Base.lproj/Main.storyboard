@@ -740,46 +740,25 @@
                                             <segue destination="4tm-Xb-QSD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="h3Y-i2-qDJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kdr-EO-kF5">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RmG-DN-h6n">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kdr-EO-kF5" id="Nmc-kZ-15r">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RmG-DN-h6n" id="qky-JJ-b6F">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeans" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pml-aS-X3r">
-                                                    <rect key="frame" x="62" y="6" width="46" height="31"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contacto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-FT-dt5">
+                                                    <rect key="frame" x="61" y="5" width="73" height="31"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
                                                     <color key="textColor" red="0.93333333330000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_jeans" translatesAutoresizingMaskIntoConstraints="NO" id="O80-YN-T8O">
-                                                    <rect key="frame" x="14" y="6" width="35" height="32"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_contacto" translatesAutoresizingMaskIntoConstraints="NO" id="mrz-ay-dCr">
+                                                    <rect key="frame" x="14" y="2" width="35" height="32"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="8A0-fY-ZxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="XOE-df-vVL"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="klc-Sk-JR7">
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="klc-Sk-JR7" id="N6n-ag-xh2">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blusas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96o-Ik-2kW">
-                                                    <rect key="frame" x="61" y="6" width="52" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" red="0.93333333330000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_blusas" translatesAutoresizingMaskIntoConstraints="NO" id="7Kt-29-94r">
-                                                    <rect key="frame" x="13" y="6" width="35" height="32"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <segue destination="sKB-HA-C7A" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Ymb-RW-iDB"/>
+                                            <segue destination="8vf-n4-uy2" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="UHI-zD-BuY"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5wV-xu-nOb">
@@ -803,25 +782,46 @@
                                             <segue destination="JO1-Yt-qKa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="AY1-D4-nkU"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RmG-DN-h6n">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="klc-Sk-JR7">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RmG-DN-h6n" id="qky-JJ-b6F">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="klc-Sk-JR7" id="N6n-ag-xh2">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contacto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-FT-dt5">
-                                                    <rect key="frame" x="61" y="5" width="73" height="31"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blusas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96o-Ik-2kW">
+                                                    <rect key="frame" x="61" y="6" width="52" height="31"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
                                                     <color key="textColor" red="0.93333333330000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_contacto" translatesAutoresizingMaskIntoConstraints="NO" id="mrz-ay-dCr">
-                                                    <rect key="frame" x="14" y="2" width="35" height="32"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_blusas" translatesAutoresizingMaskIntoConstraints="NO" id="7Kt-29-94r">
+                                                    <rect key="frame" x="13" y="6" width="35" height="32"/>
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="8vf-n4-uy2" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="UHI-zD-BuY"/>
+                                            <segue destination="sKB-HA-C7A" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Ymb-RW-iDB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kdr-EO-kF5">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kdr-EO-kF5" id="Nmc-kZ-15r">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeans" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pml-aS-X3r">
+                                                    <rect key="frame" x="62" y="6" width="46" height="31"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
+                                                    <color key="textColor" red="0.93333333330000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_jeans" translatesAutoresizingMaskIntoConstraints="NO" id="O80-YN-T8O">
+                                                    <rect key="frame" x="14" y="6" width="35" height="32"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="8A0-fY-ZxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="XOE-df-vVL"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1688,11 +1688,11 @@
         <image name="Cerrar" width="22" height="22"/>
         <image name="MenuIcon" width="22" height="22"/>
         <image name="blusas" width="480" height="338"/>
-        <image name="ic_blusas" width="48" height="48"/>
-        <image name="ic_contacto" width="48" height="48"/>
-        <image name="ic_jeans" width="48" height="48"/>
-        <image name="ic_leggings" width="48" height="48"/>
-        <image name="ic_menu" width="48" height="48"/>
+        <image name="ic_blusas" width="1422" height="1422"/>
+        <image name="ic_contacto" width="1422" height="1422"/>
+        <image name="ic_jeans" width="1422" height="1422"/>
+        <image name="ic_leggings" width="1422" height="1422"/>
+        <image name="ic_menu" width="1422" height="1422"/>
         <image name="jeans" width="480" height="338"/>
         <image name="leggings" width="480" height="338"/>
     </resources>

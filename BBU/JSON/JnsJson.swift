@@ -12,7 +12,7 @@ class JnsJson {
     
     func loadJns(completion: ([JsonExtrct] -> Void)?) {
         
-        var urlString = "http://wlodsgn.x10host.com/json/jnslst.json"
+        var urlString = "http://bonbonup.x10host.com/json/jnslst.json"
         
         let session = NSURLSession.sharedSession()
         let jnsUrl = NSURL(string: urlString)
