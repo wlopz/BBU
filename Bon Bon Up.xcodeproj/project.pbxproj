@@ -75,7 +75,7 @@
 		3CAB19871B82F26600636462 /* LeggingsZoomController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsZoomController3.swift; path = Zoom/LeggingsZoom/LeggingsZoomController3.swift; sourceTree = "<group>"; };
 		3CAB19891B83B23300636462 /* ContactoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactoViewController.swift; path = Views/ContactoViewController.swift; sourceTree = "<group>"; };
 		3CAB198B1B8517B900636462 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Views/MenuViewController.swift; sourceTree = "<group>"; };
-		3CC5E7E11B7672450036A9F9 /* BBU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BBU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC5E7E11B7672450036A9F9 /* Bon Bon Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bon Bon Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5E7E51B7672450036A9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC5E7E61B7672450036A9F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CC5E7EB1B7672450036A9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		3CC5E7E21B7672450036A9F9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CC5E7E11B7672450036A9F9 /* BBU.app */,
+				3CC5E7E11B7672450036A9F9 /* Bon Bon Up.app */,
 				3CC5E7F61B7672460036A9F9 /* BBUTests.xctest */,
 			);
 			name = Products;
@@ -299,7 +299,7 @@
 			);
 			name = BBU;
 			productName = BBU;
-			productReference = 3CC5E7E11B7672450036A9F9 /* BBU.app */;
+			productReference = 3CC5E7E11B7672450036A9F9 /* Bon Bon Up.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3CC5E7F51B7672460036A9F9 /* BBUTests */ = {
@@ -338,7 +338,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3CC5E7DC1B7672450036A9F9 /* Build configuration list for PBXProject "BBU" */;
+			buildConfigurationList = 3CC5E7DC1B7672450036A9F9 /* Build configuration list for PBXProject "Bon Bon Up" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -541,7 +541,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BBU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bon Bon Up";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBU/BBU-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -555,7 +555,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BBU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bon Bon Up";
 				SWIFT_OBJC_BRIDGING_HEADER = "BBU/BBU-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -575,7 +575,7 @@
 				);
 				INFOPLIST_FILE = BBUTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BBUTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBU.app/BBU";
 			};
 			name = Debug;
@@ -590,7 +590,7 @@
 				);
 				INFOPLIST_FILE = BBUTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BBUTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBU.app/BBU";
 			};
 			name = Release;
@@ -598,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CC5E7DC1B7672450036A9F9 /* Build configuration list for PBXProject "BBU" */ = {
+		3CC5E7DC1B7672450036A9F9 /* Build configuration list for PBXProject "Bon Bon Up" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CC5E7FE1B7672460036A9F9 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3CC5E7E01B7672450036A9F9"
-               BuildableName = "BBU.app"
+               BuildableName = "Bon Bon Up.app"
                BlueprintName = "BBU"
-               ReferencedContainer = "container:BBU.xcodeproj">
+               ReferencedContainer = "container:Bon Bon Up.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3CC5E7F51B7672460036A9F9"
-               BuildableName = "BBUTests.xctest"
+               BuildableName = "Bon Bon UpTests.xctest"
                BlueprintName = "BBUTests"
-               ReferencedContainer = "container:BBU.xcodeproj">
+               ReferencedContainer = "container:Bon Bon Up.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3CC5E7F51B7672460036A9F9"
-               BuildableName = "BBUTests.xctest"
+               BuildableName = "Bon Bon UpTests.xctest"
                BlueprintName = "BBUTests"
-               ReferencedContainer = "container:BBU.xcodeproj">
+               ReferencedContainer = "container:Bon Bon Up.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CC5E7E01B7672450036A9F9"
-            BuildableName = "BBU.app"
+            BuildableName = "Bon Bon Up.app"
             BlueprintName = "BBU"
-            ReferencedContainer = "container:BBU.xcodeproj">
+            ReferencedContainer = "container:Bon Bon Up.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CC5E7E01B7672450036A9F9"
-            BuildableName = "BBU.app"
+            BuildableName = "Bon Bon Up.app"
             BlueprintName = "BBU"
-            ReferencedContainer = "container:BBU.xcodeproj">
+            ReferencedContainer = "container:Bon Bon Up.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3CC5E7E01B7672450036A9F9"
-            BuildableName = "BBU.app"
+            BuildableName = "Bon Bon Up.app"
             BlueprintName = "BBU"
-            ReferencedContainer = "container:BBU.xcodeproj">
+            ReferencedContainer = "container:Bon Bon Up.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

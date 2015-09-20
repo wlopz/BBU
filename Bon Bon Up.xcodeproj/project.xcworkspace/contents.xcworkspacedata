@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BBU.xcodeproj">
+      location = "self:/Users/Wilo/Documents/Xcode_Projects/BBU/Bon Bon Up.xcodeproj">
    </FileRef>
 </Workspace>
