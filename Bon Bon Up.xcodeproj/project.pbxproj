@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C34DDA71BB115160026D6C9 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34DDA61BB115160026D6C9 /* LaunchViewController.swift */; };
 		3C61BEC91B7CE21F004C6890 /* JnsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61BEC81B7CE21F004C6890 /* JnsDetail.swift */; };
 		3C61BECB1B7CE293004C6890 /* BlusasDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61BECA1B7CE293004C6890 /* BlusasDetail.swift */; };
 		3C61BECD1B7CE2AD004C6890 /* LeggingsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C61BECC1B7CE2AD004C6890 /* LeggingsDetail.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C34DDA61BB115160026D6C9 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchViewController.swift; path = Views/LaunchViewController.swift; sourceTree = "<group>"; };
 		3C61BEC81B7CE21F004C6890 /* JnsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsDetail.swift; path = Details/JnsDetail.swift; sourceTree = "<group>"; };
 		3C61BECA1B7CE293004C6890 /* BlusasDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlusasDetail.swift; path = Details/BlusasDetail.swift; sourceTree = "<group>"; };
 		3C61BECC1B7CE2AD004C6890 /* LeggingsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeggingsDetail.swift; path = Details/LeggingsDetail.swift; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		3CC5E7EB1B7672450036A9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CC5E7ED1B7672450036A9F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3CC5E7F01B7672460036A9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3CC5E7F61B7672460036A9F9 /* BBUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC5E7F61B7672460036A9F9 /* Bon Bon UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bon Bon UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5E7FB1B7672460036A9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CC5E7FC1B7672460036A9F9 /* BBUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBUTests.swift; sourceTree = "<group>"; };
 		3CC5E8071B76762E0036A9F9 /* JnsJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JnsJson.swift; path = JSON/JnsJson.swift; sourceTree = "<group>"; };
@@ -179,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC5E7E11B7672450036A9F9 /* Bon Bon Up.app */,
-				3CC5E7F61B7672460036A9F9 /* BBUTests.xctest */,
+				3CC5E7F61B7672460036A9F9 /* Bon Bon UpTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +262,7 @@
 				3C7E82041B7A9A4A00597103 /* LeggingsGridController.swift */,
 				3CAB19891B83B23300636462 /* ContactoViewController.swift */,
 				3CAB198B1B8517B900636462 /* MenuViewController.swift */,
+				3C34DDA61BB115160026D6C9 /* LaunchViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -285,9 +288,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CC5E7E01B7672450036A9F9 /* BBU */ = {
+		3CC5E7E01B7672450036A9F9 /* Bon Bon Up */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CC5E8001B7672460036A9F9 /* Build configuration list for PBXNativeTarget "BBU" */;
+			buildConfigurationList = 3CC5E8001B7672460036A9F9 /* Build configuration list for PBXNativeTarget "Bon Bon Up" */;
 			buildPhases = (
 				3CC5E7DD1B7672450036A9F9 /* Sources */,
 				3CC5E7DE1B7672450036A9F9 /* Frameworks */,
@@ -297,14 +300,14 @@
 			);
 			dependencies = (
 			);
-			name = BBU;
+			name = "Bon Bon Up";
 			productName = BBU;
 			productReference = 3CC5E7E11B7672450036A9F9 /* Bon Bon Up.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3CC5E7F51B7672460036A9F9 /* BBUTests */ = {
+		3CC5E7F51B7672460036A9F9 /* Bon Bon UpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CC5E8031B7672460036A9F9 /* Build configuration list for PBXNativeTarget "BBUTests" */;
+			buildConfigurationList = 3CC5E8031B7672460036A9F9 /* Build configuration list for PBXNativeTarget "Bon Bon UpTests" */;
 			buildPhases = (
 				3CC5E7F21B7672460036A9F9 /* Sources */,
 				3CC5E7F31B7672460036A9F9 /* Frameworks */,
@@ -315,9 +318,9 @@
 			dependencies = (
 				3CC5E7F81B7672460036A9F9 /* PBXTargetDependency */,
 			);
-			name = BBUTests;
+			name = "Bon Bon UpTests";
 			productName = BBUTests;
-			productReference = 3CC5E7F61B7672460036A9F9 /* BBUTests.xctest */;
+			productReference = 3CC5E7F61B7672460036A9F9 /* Bon Bon UpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -351,8 +354,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CC5E7E01B7672450036A9F9 /* BBU */,
-				3CC5E7F51B7672460036A9F9 /* BBUTests */,
+				3CC5E7E01B7672450036A9F9 /* Bon Bon Up */,
+				3CC5E7F51B7672460036A9F9 /* Bon Bon UpTests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,6 +396,7 @@
 				3C7E820B1B7A9C1600597103 /* BlusasCell.swift in Sources */,
 				3C61BED01B7CE85D004C6890 /* TransitionOperator.swift in Sources */,
 				3CC5E8121B7695AC0036A9F9 /* JnsGridController.swift in Sources */,
+				3C34DDA71BB115160026D6C9 /* LaunchViewController.swift in Sources */,
 				3C7E82051B7A9A4A00597103 /* LeggingsGridController.swift in Sources */,
 				3CAB19861B82F25300636462 /* LeggingsZoomController2.swift in Sources */,
 				3C7E81FF1B7A907F00597103 /* SWRevealViewController.m in Sources */,
@@ -426,7 +430,7 @@
 /* Begin PBXTargetDependency section */
 		3CC5E7F81B7672460036A9F9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3CC5E7E01B7672450036A9F9 /* BBU */;
+			target = 3CC5E7E01B7672450036A9F9 /* Bon Bon Up */;
 			targetProxy = 3CC5E7F71B7672460036A9F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -575,7 +579,7 @@
 				);
 				INFOPLIST_FILE = BBUTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = BBUTests;
+				PRODUCT_NAME = "Bon Bon UpTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBU.app/BBU";
 			};
 			name = Debug;
@@ -590,7 +594,7 @@
 				);
 				INFOPLIST_FILE = BBUTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = BBUTests;
+				PRODUCT_NAME = "Bon Bon UpTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BBU.app/BBU";
 			};
 			name = Release;
@@ -607,7 +611,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CC5E8001B7672460036A9F9 /* Build configuration list for PBXNativeTarget "BBU" */ = {
+		3CC5E8001B7672460036A9F9 /* Build configuration list for PBXNativeTarget "Bon Bon Up" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CC5E8011B7672460036A9F9 /* Debug */,
@@ -616,7 +620,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CC5E8031B7672460036A9F9 /* Build configuration list for PBXNativeTarget "BBUTests" */ = {
+		3CC5E8031B7672460036A9F9 /* Build configuration list for PBXNativeTarget "Bon Bon UpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CC5E8041B7672460036A9F9 /* Debug */,

@@ -37,7 +37,7 @@ class ContactoViewController : UIViewController, MFMailComposeViewControllerDele
         
         var mensajeBody = bodyContacto
         
-        var toRecipients = ["dynmk@gmail.com"]
+        var toRecipients = ["bonbonup@hotmail.com"]
         
         var mc: MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self
