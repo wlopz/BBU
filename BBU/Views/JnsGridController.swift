@@ -40,7 +40,6 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
         layout.minimumLineSpacing = 0
         
         let cellWidth = calcCellWidth(self.view.frame.size)
-        //let cellWidth = self.view.frame.width/2
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
         
         jns = [JsonExtrct]()
@@ -80,7 +79,7 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
             
             let selectedItems = collectionView.indexPathsForSelectedItems()
             
-            let selectedIndexPath = selectedItems[0] as! NSIndexPath
+            let selectedIndexPath = selectedItems![0] 
             let jsonextrct = jns[selectedIndexPath.row]
             
             let controller = segue.destinationViewController as! JnsDetail
@@ -91,7 +90,7 @@ class JnsGridController : UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         
-        var cellWidth = calcCellWidth(size)
+        let cellWidth = calcCellWidth(size)
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
     }
     

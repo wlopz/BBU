@@ -40,7 +40,6 @@ class LeggingsGridController : UIViewController, UICollectionViewDataSource, UIC
         layout.minimumLineSpacing = 0
         
         let cellWidth = calcCellWidth(self.view.frame.size)
-        //let cellWidth = self.view.frame.width/2
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
         
         leggings = [JsonExtrct]()
@@ -80,7 +79,7 @@ class LeggingsGridController : UIViewController, UICollectionViewDataSource, UIC
             
             let selectedItems = collectionView.indexPathsForSelectedItems()
             
-            let selectedIndexPath = selectedItems[0] as! NSIndexPath
+            let selectedIndexPath = selectedItems![0] 
             let jsonextrct = leggings[selectedIndexPath.row]
             
             let controller = segue.destinationViewController as! LeggingsDetail
@@ -91,7 +90,7 @@ class LeggingsGridController : UIViewController, UICollectionViewDataSource, UIC
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         
-        var cellWidth = calcCellWidth(size)
+        let cellWidth = calcCellWidth(size)
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
     }
     

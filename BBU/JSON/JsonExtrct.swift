@@ -38,15 +38,6 @@ class JsonExtrct {
             self.imageUrl3 = imageUrl3
         }
         
-        //let image = data["image"] as! NSDictionary
-        //self.imageUrl = getStringFromJSON(image, key: "image")
-        
-        //let image2 = data["image2"] as! NSDictionary
-        //self.imageUrl2 = getStringFromJSON(image, key: "image2")
-        
-        //let image3 = data["image3"] as! NSDictionary
-        //self.imageUrl3 = getStringFromJSON(image, key: "image3")
-        
         self.marca = Utils.getStringFromJSON(data, key: "marca")
         
         self.color = Utils.getStringFromJSON(data, key: "color")

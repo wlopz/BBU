@@ -12,22 +12,19 @@ class JnsJson {
     
     func loadJns(completion: ([JsonExtrct] -> Void)?) {
         
-        var urlString = "http://bonbonup.x10host.com/json/jnslst.json"
+        let urlString = "http://bonbonup.x10host.com/json/jnslst.json"
         
         let session = NSURLSession.sharedSession()
         let jnsUrl = NSURL(string: urlString)
-        //let jnsUrl = NSURL(scheme: "http", host: "wlodsgn.x10host.com", path: "/json/jnslst.json")
         
-        var task = session.dataTaskWithURL(jnsUrl!){
+        let task = session.dataTaskWithURL(jnsUrl!){
             (data, response, error) -> Void in
             
             if error != nil {
-                println(error.localizedDescription)
+                print(error!.localizedDescription)
             } else {
                 
-                var error : NSError?
-                
-                var jnsData = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: &error) as! NSArray
+                let jnsData = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)) as! NSArray
                 
                 var jns = [JsonExtrct]()
                 

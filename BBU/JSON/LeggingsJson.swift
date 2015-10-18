@@ -12,22 +12,19 @@ class LeggingsJson {
     
     func loadLeggings(completion: ([JsonExtrct] -> Void)?) {
         
-        var urlString = "http://bonbonup.x10host.com/json/leggingslst.json"
+        let urlString = "http://bonbonup.x10host.com/json/leggingslst.json"
         
         let session = NSURLSession.sharedSession()
         let leggingsUrl = NSURL(string: urlString)
-        //let leggingsUrl = NSURL(scheme: "http", host: "wlodsgn.x10host.com", path: "/json/leggingslst.json")
         
-        var task = session.dataTaskWithURL(leggingsUrl!){
+        let task = session.dataTaskWithURL(leggingsUrl!){
             (data, response, error) -> Void in
             
             if error != nil {
-                println(error.localizedDescription)
+                print(error!.localizedDescription)
             } else {
                 
-                var error : NSError?
-                
-                var leggingsData = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: &error) as! NSArray
+                let leggingsData = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)) as! NSArray
                 
                 var leggings = [JsonExtrct]()
                 

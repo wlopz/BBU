@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        var navAppearance = UINavigationBar.appearance()
+        let navAppearance = UINavigationBar.appearance()
         
         let backImage = UIImage(named: "back")
         navAppearance.backIndicatorImage = backImage
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         textAttributes.setObject(UIColor.blackColor(), forKey: NSForegroundColorAttributeName)
         textAttributes.setObject(UIFont(name: mTheme.fontName, size: 19)!, forKey: NSFontAttributeName)
         
-        navAppearance.titleTextAttributes = textAttributes as [NSObject : AnyObject]
+        navAppearance.titleTextAttributes = textAttributes as [NSObject : AnyObject] as? [String : AnyObject]
         navAppearance.tintColor = UIColor.blackColor()
         
         let barButtonAppearance = UIBarButtonItem.appearance()

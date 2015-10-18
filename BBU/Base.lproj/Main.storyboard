@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8t9-03-OVc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8t9-03-OVc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -29,7 +30,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LeggingsCell" id="JWQ-bC-K2T" customClass="LeggingsCell" customModule="Bon_Bon_Up" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="64" width="217" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="217" height="240"/>
@@ -349,7 +350,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" none="YES" image="YES"/>
+                            <accessibilityTraits key="traits" image="YES"/>
                         </accessibility>
                         <constraints>
                             <constraint firstItem="7e0-la-dGM" firstAttribute="top" secondItem="4hI-r4-ZID" secondAttribute="top" id="4TE-72-R0S"/>
@@ -402,7 +403,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BlusasCell" id="HGY-Gh-sRc" customClass="BlusasCell" customModule="Bon_Bon_Up" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="64" width="217" height="240"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="217" height="240"/>
@@ -485,7 +486,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="sKB-HA-C7A" kind="show" id="WTa-3m-YKi"/>
+                                            <segue destination="sKB-HA-C7A" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="WTa-3m-YKi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGR-dq-xA8">
@@ -497,7 +498,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="JO1-Yt-qKa" kind="show" id="mbA-p9-icc"/>
+                                            <segue destination="JO1-Yt-qKa" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="mbA-p9-icc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RU-7F-ZLH">
@@ -508,7 +509,7 @@
                                         </constraints>
                                         <state key="normal" image="jeans"/>
                                         <connections>
-                                            <segue destination="8A0-fY-ZxV" kind="show" id="lEe-Ms-hCy"/>
+                                            <segue destination="8A0-fY-ZxV" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="lEe-Ms-hCy"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECCIONA TU PRODUCTO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZS-Du-6Ve">
@@ -603,7 +604,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JnsCell" id="ydw-ho-fFq" customClass="JnsCell" customModule="Bon_Bon_Up" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="64" width="217" height="239"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="217" height="239"/>
@@ -784,8 +785,10 @@
                             <tableViewSection id="0vo-7C-ffe">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="8di-ZW-IFg">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8di-ZW-IFg" id="Ylv-Sv-gvJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="roC-Qp-KXc">
@@ -799,8 +802,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9VL-jC-VhM">
+                                        <rect key="frame" x="0.0" y="70" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9VL-jC-VhM" id="coy-Sj-Naf">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Inicio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akC-CJ-ey1">
@@ -820,8 +825,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RmG-DN-h6n">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RmG-DN-h6n" id="qky-JJ-b6F">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contacto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcs-FT-dt5">
@@ -841,8 +848,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5wV-xu-nOb">
+                                        <rect key="frame" x="0.0" y="158" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5wV-xu-nOb" id="BAL-O8-QzE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_leggings" translatesAutoresizingMaskIntoConstraints="NO" id="Cwz-qN-el3">
@@ -862,8 +871,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="klc-Sk-JR7">
+                                        <rect key="frame" x="0.0" y="202" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="klc-Sk-JR7" id="N6n-ag-xh2">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blusas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96o-Ik-2kW">
@@ -883,8 +894,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kdr-EO-kF5">
+                                        <rect key="frame" x="0.0" y="246" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kdr-EO-kF5" id="Nmc-kZ-15r">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeans" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pml-aS-X3r">
@@ -1674,14 +1687,14 @@
                             <constraint firstItem="iZl-QY-Cmv" firstAttribute="leading" secondItem="MZl-Qm-KcB" secondAttribute="leading" id="0xx-M7-6YP"/>
                             <constraint firstItem="910-Jd-MFi" firstAttribute="leading" secondItem="UWY-Tr-NKQ" secondAttribute="leading" id="2pT-17-bOE"/>
                             <constraint firstItem="XtO-Pz-orq" firstAttribute="top" secondItem="CAl-sn-rh4" secondAttribute="bottom" constant="150" id="9mK-Cv-xKT"/>
-                            <constraint firstItem="UWY-Tr-NKQ" firstAttribute="leading" secondItem="AXc-Zq-7kO" secondAttribute="leadingMargin" id="Aci-Uv-4Ei"/>
+                            <constraint firstItem="UWY-Tr-NKQ" firstAttribute="leading" secondItem="AXc-Zq-7kO" secondAttribute="leadingMargin" constant="-4" id="Aci-Uv-4Ei"/>
                             <constraint firstItem="MZl-Qm-KcB" firstAttribute="centerX" secondItem="CAl-sn-rh4" secondAttribute="centerX" id="HQX-VF-xVT"/>
                             <constraint firstItem="iZl-QY-Cmv" firstAttribute="top" secondItem="UWY-Tr-NKQ" secondAttribute="bottom" constant="13" id="Mnr-av-NoU"/>
                             <constraint firstItem="MZl-Qm-KcB" firstAttribute="top" secondItem="iZl-QY-Cmv" secondAttribute="bottom" constant="-3" id="VpV-kn-ncK"/>
                             <constraint firstItem="MZl-Qm-KcB" firstAttribute="trailing" secondItem="iZl-QY-Cmv" secondAttribute="trailing" id="b91-xL-Pms"/>
                             <constraint firstItem="iZl-QY-Cmv" firstAttribute="trailing" secondItem="UWY-Tr-NKQ" secondAttribute="trailing" id="gc1-Hl-eLj"/>
                             <constraint firstItem="UWY-Tr-NKQ" firstAttribute="leading" secondItem="iZl-QY-Cmv" secondAttribute="leading" id="hPd-k5-Yfm"/>
-                            <constraint firstItem="UWY-Tr-NKQ" firstAttribute="trailing" secondItem="AXc-Zq-7kO" secondAttribute="trailingMargin" id="hhL-OB-MnZ"/>
+                            <constraint firstItem="UWY-Tr-NKQ" firstAttribute="trailing" secondItem="AXc-Zq-7kO" secondAttribute="trailingMargin" constant="4" id="hhL-OB-MnZ"/>
                             <constraint firstItem="CAl-sn-rh4" firstAttribute="top" secondItem="MZl-Qm-KcB" secondAttribute="bottom" constant="8" symbolic="YES" id="kJc-ev-Jki"/>
                             <constraint firstItem="910-Jd-MFi" firstAttribute="top" secondItem="UJ2-NH-ZbO" secondAttribute="bottom" constant="24" id="pX8-eG-gMh"/>
                             <constraint firstItem="UWY-Tr-NKQ" firstAttribute="top" secondItem="910-Jd-MFi" secondAttribute="bottom" constant="8" symbolic="YES" id="tF6-U7-4Zx"/>
@@ -1841,9 +1854,9 @@
         <image name="leggings" width="480" height="338"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XOE-df-vVL"/>
-        <segue reference="AY1-D4-nkU"/>
-        <segue reference="Ymb-RW-iDB"/>
         <segue reference="dP8-2Y-Hl6"/>
+        <segue reference="lEe-Ms-hCy"/>
+        <segue reference="WTa-3m-YKi"/>
+        <segue reference="mbA-p9-icc"/>
     </inferredMetricsTieBreakers>
 </document>

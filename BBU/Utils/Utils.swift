@@ -17,7 +17,7 @@ class Utils {
         
         dispatch_async(downloadQueue) {
             
-            var data = NSData(contentsOfURL: NSURL(string: jsonextrct.imageUrl)!)
+            let data = NSData(contentsOfURL: NSURL(string: jsonextrct.imageUrl)!)
             
             var image : UIImage?
             if data != nil {
@@ -37,7 +37,7 @@ class Utils {
         
         dispatch_async(downloadQueue) {
             
-            var data = NSData(contentsOfURL: NSURL(string: jsonextrct.imageUrl2)!)
+            let data = NSData(contentsOfURL: NSURL(string: jsonextrct.imageUrl2)!)
             
             var image2 : UIImage?
             if data != nil {
@@ -57,7 +57,7 @@ class Utils {
         
         dispatch_async(downloadQueue) {
             
-            var data = NSData(contentsOfURL: NSURL(string: jsonextrct.imageUrl3)!)
+            let data = NSData(contentsOfURL: NSURL(string: jsonextrct.imageUrl3)!)
             
             var image3 : UIImage?
             if data != nil {
@@ -72,8 +72,6 @@ class Utils {
     }
     
     class func getStringFromJSON(data: NSDictionary, key: String) -> String{
-        
-        let info : AnyObject? = data[key]
         
         if let info = data[key] as? String {
             return info

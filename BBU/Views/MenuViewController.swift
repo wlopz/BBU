@@ -2,8 +2,6 @@ import Foundation
 
 import UIKit
 
-//import QuartzCore
-
 class MenuViewController : UIViewController {
     
     @IBOutlet weak var menuStart: UIBarButtonItem!

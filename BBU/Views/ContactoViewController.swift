@@ -33,13 +33,13 @@ class ContactoViewController : UIViewController, MFMailComposeViewControllerDele
     @IBAction func enviarContacto(sender: AnyObject) {
         
         var asuntoText = ""
-        asuntoText += asuntoContacto.text
+        asuntoText += asuntoContacto.text!
         
-        var mensajeBody = bodyContacto
+        let mensajeBody = bodyContacto
         
-        var toRecipients = ["bonbonup@hotmail.com"]
+        let toRecipients = ["bonbonup@hotmail.com"]
         
-        var mc: MFMailComposeViewController = MFMailComposeViewController()
+        let mc: MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self
             mc.setSubject(asuntoText)
             mc.setMessageBody(mensajeBody.text, isHTML: false)
@@ -49,18 +49,18 @@ class ContactoViewController : UIViewController, MFMailComposeViewControllerDele
         
     }
     
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         
-        switch result.value{
+        switch result.rawValue{
             
-            case MFMailComposeResultCancelled.value:
+            case MFMailComposeResultCancelled.rawValue:
                 NSLog("Correo Cancelado")
-            case MFMailComposeResultSaved.value:
+            case MFMailComposeResultSaved.rawValue:
                 NSLog("Correo Salvado")
-            case MFMailComposeResultSent.value:
+            case MFMailComposeResultSent.rawValue:
                 NSLog("Correo Enviado")
-            case MFMailComposeResultFailed.value:
-                NSLog("Correo Enviado Fallo: %@", [error.localizedDescription])
+            case MFMailComposeResultFailed.rawValue:
+                NSLog("Correo Enviado Fallo: %@", [error!.localizedDescription])
             default:
                 break
             

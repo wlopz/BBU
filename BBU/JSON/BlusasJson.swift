@@ -12,22 +12,19 @@ class BlusasJson {
     
     func loadBlusas(completion: ([JsonExtrct] -> Void)?) {
         
-        var urlString = "http://bonbonup.x10host.com/json/blusaslst.json"
+        let urlString = "http://bonbonup.x10host.com/json/blusaslst.json"
         
         let session = NSURLSession.sharedSession()
         let blusasUrl = NSURL(string: urlString)
-        //let blusasUrl = NSURL(scheme: "http", host: "wlodsgn.x10host.com", path: "/json/blusaslst.json")
         
-        var task = session.dataTaskWithURL(blusasUrl!){
+        let task = session.dataTaskWithURL(blusasUrl!){
             (data, response, error) -> Void in
             
             if error != nil {
-                println(error.localizedDescription)
+                print(error!.localizedDescription)
             } else {
                 
-                var error : NSError?
-                
-                var blusasData = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: &error) as! NSArray
+                let blusasData = (try! NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers)) as! NSArray
                 
                 var blusas = [JsonExtrct]()
                 

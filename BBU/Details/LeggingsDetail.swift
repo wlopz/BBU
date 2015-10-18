@@ -32,31 +32,21 @@ class LeggingsDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //titulo = jsonextrct.titulo
-        
         tituloLabel.font = UIFont(name: mTheme.fontName, size: 28)
         tituloLabel.textColor = UIColor.redColor()
         tituloLabel.text = jsonextrct.titulo
-        
-        //marca = jsonextrct.marca
         
         marcaLabel.font = UIFont(name: mTheme.fontName, size: 18)
         marcaLabel.textColor = UIColor.redColor()
         marcaLabel.text = jsonextrct.marca
         
-        //color = jsonextrct.color
-        
         colorLabel.font = UIFont(name: mTheme.fontName, size: 18)
         colorLabel.textColor = UIColor.redColor()
         colorLabel.text = jsonextrct.color
         
-        //tipo = jsonextrct.tipo
-        
         tipoLabel.font = UIFont(name: mTheme.fontName, size: 18)
         tipoLabel.textColor = UIColor.redColor()
         tipoLabel.text = jsonextrct.tipo
-        
-        //ref = jsonextrct.ref
         
         refLabel.font = UIFont(name: mTheme.fontName, size: 18)
         refLabel.textColor = UIColor.redColor()
@@ -67,7 +57,6 @@ class LeggingsDetail: UIViewController {
         }else{
             Utils.asyncLoadJsonImage(jsonextrct, imageView: imageView)
         }
-        //topImageViewHeightConstraint.constant = 240
         
         imageView.layer.borderColor = UIColor.redColor().CGColor
         imageView.layer.borderWidth = 0.5
@@ -90,19 +79,19 @@ class LeggingsDetail: UIViewController {
         imageView3.layer.borderColor = UIColor.redColor().CGColor
         imageView3.layer.borderWidth = 0.5
         
-        var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomLeggings:")
+        let tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomLeggings:")
         tapGestureZoom.numberOfTapsRequired = 1
         tapGestureZoom.numberOfTouchesRequired = 1
         imageView.userInteractionEnabled = true
         imageView.addGestureRecognizer(tapGestureZoom)
         
-        var tapGestureZoom2 = UITapGestureRecognizer(target: self, action: "zoomLeggings2:")
+        let tapGestureZoom2 = UITapGestureRecognizer(target: self, action: "zoomLeggings2:")
         tapGestureZoom2.numberOfTapsRequired = 1
         tapGestureZoom2.numberOfTouchesRequired = 1
         imageView2.userInteractionEnabled = true
         imageView2.addGestureRecognizer(tapGestureZoom2)
         
-        var tapGestureZoom3 = UITapGestureRecognizer(target: self, action: "zoomLeggings3:")
+        let tapGestureZoom3 = UITapGestureRecognizer(target: self, action: "zoomLeggings3:")
         tapGestureZoom3.numberOfTapsRequired = 1
         tapGestureZoom3.numberOfTouchesRequired = 1
         imageView3.userInteractionEnabled = true

@@ -13,14 +13,10 @@ import UIKit
 class LeggingsCell: UICollectionViewCell {
     
     @IBOutlet var coverImageView : UIImageView!
-    //@IBOutlet var nameLabel : UILabel!
     @IBOutlet var titleLabel : UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        //nameLabel.textColor = UIColor.blackColor()
-        //nameLabel.font = UIFont(name: MTheme.fontName, size: 14)
         
         titleLabel.textColor = UIColor.redColor()
         titleLabel.font = UIFont(name: mTheme.fontName, size: 14)

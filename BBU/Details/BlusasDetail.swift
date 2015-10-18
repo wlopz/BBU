@@ -18,8 +18,6 @@ class BlusasDetail: UIViewController {
     @IBOutlet var refLabel : UILabel!
     
     @IBOutlet var imageView : UIImageView!
-    //@IBOutlet var imageView2 : UIImageView!
-    //@IBOutlet var imageView3 : UIImageView!
     
     @IBOutlet var backbutton : UIButton!
     
@@ -32,31 +30,21 @@ class BlusasDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //titulo = jsonextrct.titulo
-        
         tituloLabel.font = UIFont(name: mTheme.fontName, size: 28)
         tituloLabel.textColor = UIColor.redColor()
         tituloLabel.text = jsonextrct.titulo
-        
-        //marca = jsonextrct.marca
         
         marcaLabel.font = UIFont(name: mTheme.fontName, size: 18)
         marcaLabel.textColor = UIColor.redColor()
         marcaLabel.text = jsonextrct.marca
         
-        //color = jsonextrct.color
-        
         colorLabel.font = UIFont(name: mTheme.fontName, size: 18)
         colorLabel.textColor = UIColor.redColor()
         colorLabel.text = jsonextrct.color
         
-        //tipo = jsonextrct.tipo
-        
         tipoLabel.font = UIFont(name: mTheme.fontName, size: 18)
         tipoLabel.textColor = UIColor.redColor()
         tipoLabel.text = jsonextrct.tipo
-        
-        //ref = jsonextrct.ref
         
         refLabel.font = UIFont(name: mTheme.fontName, size: 18)
         refLabel.textColor = UIColor.redColor()
@@ -67,30 +55,11 @@ class BlusasDetail: UIViewController {
         }else{
             Utils.asyncLoadJsonImage(jsonextrct, imageView: imageView)
         }
-        //topImageViewHeightConstraint.constant = 240
         
         imageView.layer.borderColor = UIColor.redColor().CGColor
         imageView.layer.borderWidth = 0.5
         
-        //if let imageData2 = jsonextrct.imageData2 {
-            //imageView2.image = UIImage(data: imageData2)
-        //}else{
-            //UtilsBlusas.asyncLoadJsonImage(jsonextrct, imageView2: imageView2)
-        //}
-        
-        //imageView2.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
-        //imageView2.layer.borderWidth = 0.5
-        
-        //if let imageData3 = jsonextrct.imageData3 {
-            //imageView3.image = UIImage(data: imageData3)
-        //}else{
-            //Utils.asyncLoadJsonImage(jsonextrct, imageView3: imageView3)
-        //}
-        
-        //imageView3.layer.borderColor = UIColor(white: 0.2, alpha: 1.0).CGColor
-        //imageView3.layer.borderWidth = 0.5
-        
-        var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomBlusas:")
+        let tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomBlusas:")
         tapGestureZoom.numberOfTapsRequired = 1
         tapGestureZoom.numberOfTouchesRequired = 1
         imageView.userInteractionEnabled = true
